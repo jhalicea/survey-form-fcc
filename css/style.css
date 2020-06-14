@@ -1,0 +1,148 @@
+        *, 
+        *::before, 
+        *::after {
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: Arial,Verdana,sans-serif;
+            color: #fff;
+            line-height: 1.5;
+            font-weight: 400;
+            font-size: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #37af65;
+        }
+        
+        body {
+            background: url(/img/spacex.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #000;
+            font-size: 1.9em;
+        }
+
+        #container {
+            width: 100%;
+            margin: 1.3rem auto;
+            }
+
+        @media (max-width: 768px) {
+            #title {
+                font-size: 1.6em;
+                margin-top: 30px;
+                }
+            }
+
+        @media (min-width: 576px) {
+            #container {
+                max-width: 540px;
+                }
+            }
+            
+        @media (min-width: 768px) {
+            #container {
+                max-width: 720px;
+                }
+        }
+
+        header {
+            text-align: center;
+        }
+
+        #title {
+            padding: 10px 10px;
+            margin-bottom: 0;
+        }
+
+        #description {
+            margin-top: 0px;
+    
+        }
+        
+        #survey-form {
+            padding: 20px 40px;
+            background-color: rgba(109, 109, 235, 0.1);
+            border-radius: 15px;
+        }
+
+        .form-group {
+            width: 100%;
+            padding-bottom: 20px;
+        }
+
+        .form-group p {
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+        }
+
+        input,
+        button,
+        select,
+        textarea {
+        margin: 0px;
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        }
+
+        .form-layout {
+            display: block;
+            width: 100%;
+            height: 5rem;
+            padding: 1.75rem 1.75rem;
+            color: rgb(59,59,59);
+            background-color: #fff;
+            border: 1px solid #a9c0d8;
+            border-radius: 0.50rem;
+        }
+
+        .form-layout:focus {
+            border-color: #fff;
+            outline: 0;
+            box-shadow: 0 0 0 0.3rem rgba(166, 203, 243, 0.25);
+          }
+
+        #dropdown {
+            height: 6rem;
+            color: rgb(59,59,59);
+        }
+
+        .radio-button, .check-box {
+            display: inline-block;
+            margin-right: 1.625rem;
+            min-height: 2rem;
+            min-width: 2rem;
+        }
+
+        textarea {
+            min-height: 150px;
+            width: 100%;
+            padding: 1.625rem;
+            resize: vertical;
+          }
+        
+        #submit {
+            margin-top: 20px;
+            border-radius: 2px;
+            cursor: pointer;
+            background-color: #37af65;
+            color: #fff;
+            padding: 0;
+        }
+
+        footer {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1.5rem;
+        }

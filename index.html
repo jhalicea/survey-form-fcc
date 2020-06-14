@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space X Mission To The Moon</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container-bg">
+    <div id="container">
+        <header>
+            <h1 id="title">SpaceX Mission To The Moon</h1>
+            <p id="description">
+                <strong>Do You Have what It Takes</strong>
+                <br>
+                <em>To Become an Astronaut Just Fill In The Form Below</em>
+            </p>
+        </header>
+        <form id="survey-form">
+
+            <div class="form-group">
+                <label id="name-label" for="name">First Name</label>
+                <input class="form-layout" type="text" id="name" placeholder="First Name" required>
+            </div>
+
+            <div class="form-group">
+                <label id="last-label" for="last">Last Name</label>
+                <input class="form-layout" type="text" id="last" placeholder="Last Name" required>
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input class="form-layout" type="email" id="email" placeholder="Email" required>
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="number">Years of Experience In Your Field</label>
+                <input class="form-layout" type="number" id="number" placeholder="Years" min="10" max="1000" required>
+            </div>
+
+            <div class="form-group">
+                <p>Select A Path</p>
+                <select class="form-layout" id="dropdown" required>
+                    <option id="path-selected" disabled selected value>Select An Option</option>
+                    <option value="moon-mining">Moon Mining</option>
+                    <option value="moon-exploration">Moon Exploration</option>
+                    <option value="moon-labs">Moon Labs</option>
+                </select>
+            </div>
+
+            <div class="form-group radio-container">
+                <p>Select A Phase</p>
+                <label>
+                    <input type="radio" name="phase" value="mission-1" class="radio-button">
+                   Mission Phase 1
+                </label>
+                <label>
+                    <input type="radio" name="phase" value="mission-2" class="radio-button">
+                  Mission Phase 2
+                </label>
+                <label>
+                    <input type="radio" name="phase" value="mission-3" class="radio-button">
+                  Mission Phase 3
+                </label>
+            </div>
+
+            <div class="form-group checkbox-container">
+                <p>Select A Moon Area To Work And Live<span>(Check All That Apply)</span></p>
+                <label>
+                    <input type="checkbox" name="area" value="south-pole" class="check-box">
+                    Lunar South Pole
+                </label>
+                <label>
+                    <input type="checkbox" name="area" value="north-pole" class="check-box">
+                    Lunar North Pole
+                </label>
+                <label>
+                    <input type="checkbox" name="area" value="far-side" class="check-box">
+                    Far Side Of The Moon
+                </label>
+                <label>
+                    <input type="checkbox" name="area" value="near-side" class="check-box">
+                    Near Side Of The Moon
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>Any Comments Or Suggestions?</p>
+                <textarea class="form-layout" id="comments" name="comments" placeholder="Enter Your Comment Here..." cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button class="form-layout" type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>  
+    </div>
+    </div>
+    <footer>
+        Crafted by <a href="https://www.jhalicea.com" target="_blank">jhalicea</a>  for <a href="https://www.freecodecamp.org/learn" target="_blank">FCC</a><br>
+        img source: <a href="https://www.spacex.com" target="_blank">spacex.com </a><br>
+        cc 2020
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
